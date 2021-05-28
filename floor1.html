@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="script.js" defer></script>
+  <link href="styles.css" rel="stylesheet">
+  <title>Navi Sunpasit</title>
+
+  <!-- BOOTSWATCH -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/pulse/bootstrap.min.css">
+
+  <!-- ANIMATE CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+</head>
+
+<svg style="display:none;">
+  <symbol id="pages" viewBox="0 0 16 16">
+    <rect x="4" width="12" height="12" transform="translate(20 12) rotate(-180)" />
+    <polygon points="2 14 2 2 0 2 0 14 0 16 2 16 14 16 14 14 2 14" />
+  </symbol>
+  <symbol id="settings" viewBox="0 0 16 16">
+    <rect x="9.78" y="5.34" width="1" height="7.97" />
+    <polygon points="7.79 6.07 10.28 1.75 12.77 6.07 7.79 6.07" />
+    <rect x="4.16" y="1.75" width="1" height="7.97" />
+    <polygon points="7.15 8.99 4.66 13.31 2.16 8.99 7.15 8.99" />
+    <rect x="1.28" width="1" height="4.97" />
+    <polygon points="3.28 4.53 1.78 7.13 0.28 4.53 3.28 4.53" />
+    <rect x="12.84" y="11.03" width="1" height="4.97" />
+    <polygon points="11.85 11.47 13.34 8.88 14.84 11.47 11.85 11.47" />
+  </symbol>
+  <symbol id="collapse" viewBox="0 0 16 16">
+    <polygon points="11.62 3.81 7.43 8 11.62 12.19 10.09 13.71 4.38 8 10.09 2.29 11.62 3.81" />
+  </symbol>
+  <symbol id="users" viewBox="0 0 16 16">
+    <path
+      d="M8,0a8,8,0,1,0,8,8A8,8,0,0,0,8,0ZM8,15a7,7,0,0,1-5.19-2.32,2.71,2.71,0,0,1,1.7-1,13.11,13.11,0,0,0,1.29-.28,2.32,2.32,0,0,0,.94-.34,1.17,1.17,0,0,0-.27-.7h0A3.61,3.61,0,0,1,5.15,7.49,3.18,3.18,0,0,1,8,4.07a3.18,3.18,0,0,1,2.86,3.42,3.6,3.6,0,0,1-1.32,2.88h0a1.13,1.13,0,0,0-.27.69,2.68,2.68,0,0,0,.93.31,10.81,10.81,0,0,0,1.28.23,2.63,2.63,0,0,1,1.78,1A7,7,0,0,1,8,15Z" />
+  </symbol>
+</svg>
+
+<body class="bg-light" id="user_div">
+  <header class="page-header">
+    <link rel="stylesheet" href="header.css" />
+    <nav>
+      <a href="#0" aria-label="forecastr logo" class="logo">
+        <svg width="140" height="49">
+          <!-- <use xlink:href="#logo"></use> -->
+          <image xlink:href="https://image.flaticon.com/icons/png/512/179/179571.png" height="49" width="49" x="50%"
+            y="0%" />
+        </svg>
+      </a>
+      <h1 style="text-align: center;">Sunpasit</h1>
+      <button class="toggle-mob-menu" aria-expanded="false" aria-label="open menu">
+        <svg width="20" height="20" aria-hidden="true">
+          <!-- <use xlink:href="#down"></use> -->
+        </svg>
+      </button>
+      <ul class="admin-menu">
+        <li class="menu-heading">
+          <h3>Admin</h3>
+        </li>
+        <li>
+          <a href="navisunpasit.html">
+            <svg>
+              <use xlink:href="#pages"></use>
+            </svg>
+            <span>Poster</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg>
+              <use xlink:href="#pages"></use>
+            </svg>
+            <span>1st floor</span>
+          </a>
+        </li>
+        <li>
+          <a href="floor2.html">
+            <svg>
+              <use xlink:href="#pages"></use>
+            </svg>
+            <span>2nd floor</span>
+          </a>
+        </li>
+        <li>
+          <a href="floor3.html">
+            <svg>
+              <use xlink:href="#pages"></use>
+            </svg>
+            <span>3rd Floor</span>
+          </a>
+        </li>
+        <li>
+          <a href="floor4.html">
+            <svg>
+              <use xlink:href="#pages"></use>
+            </svg>
+            <span>4th Floor</span>
+          </a>
+        </li>
+        <li class="menu-heading">
+          <h3>Settings</h3>
+        </li>
+        <li>
+          <div class="switch">
+            <input type="checkbox" id="mode" checked>
+            <label for="mode">
+              <span></span>
+              <span>Dark</span>
+            </label>
+          </div>
+          <button class="collapse-btn" aria-expanded="true" aria-label="collapse menu">
+            <svg aria-hidden="true">
+              <use xlink:href="#collapse"></use>
+            </svg>
+            <span>Collapse</span>
+          </button>
+        </li>
+    </nav>
+    <script src="header.js"></script>
+  </header>
+
+  <section class="page-content">
+    <section class="search-and-user">
+      <form>
+        <span class="greeting">Welcome to Admin navigate sunpasit</span>
+      </form>
+      <div class="admin-profile">
+        <span class="greeting">Hello admin</span>
+        <div class="notifications">
+          <span class="badge"></span>
+          <svg>
+            <a href="index.html">
+              <use xlink:href="#users"></use>
+            </a>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!-- ADD TASK -->
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+
+              <h1 class="h4">เพิ่ม FLOOR_1</h1>
+
+              <form id="task-form">
+                <div class="form-group">
+                  <input type="text" id="task-name" class="form-control" class="Task Title" placeholder="ห้อง / แผนก"
+                    autofocus>
+                </div>
+                <div class="form-group">
+                  <textarea id="task-iconLocation" rows="3" class="form-control" placeholder="iconLocation"></textarea>
+                </div>
+                <div class="form-group">
+                  <textarea id="task-status" rows="3" class="form-control" placeholder="status"></textarea>
+                </div>
+                <div class="form-group">
+                  <textarea id="task-imageLocation1" rows="3" class="form-control"
+                    placeholder="รูปเส้นทางที่ 1"></textarea>
+                </div>
+                <div class="form-group">
+                  <textarea id="task-imageLocation2" rows="3" class="form-control"
+                    placeholder="รูปเส้นทางที่ 2"></textarea>
+                </div>
+                <div class="form-group">
+                  <textarea id="task-imageLocation3" rows="3" class="form-control"
+                    placeholder="รูปเส้นทางที่ 3"></textarea>
+                </div>
+                <div class="form-group">
+                  <textarea id="task-imageLocation4" rows="3" class="form-control"
+                    placeholder="รูปเส้นทางที่ 4"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <textarea id="task-route1" rows="3" class="form-control"
+                    placeholder="รายละเอียดเส้นทางที่ 1 "></textarea>
+                </div>
+                <div class="form-group">
+                  <textarea id="task-route2" rows="3" class="form-control"
+                    placeholder="รายละเอียดเส้นทางที่ 2 "></textarea>
+                </div>
+                <div class="form-group">
+                  <textarea id="task-route3" rows="3" class="form-control"
+                    placeholder="รายละเอียดเส้นทางที่ 3 "></textarea>
+                </div>
+                <div class="form-group">
+                  <textarea id="task-route4" rows="3" class="form-control"
+                    placeholder="รายละเอียดเส้นทางที่ 4 "></textarea>
+                </div>
+
+                <button class="btn btn-primary" id="btn-task-form">
+                  Save
+                </button>
+
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Tasks List -->
+        <div class="col-md-6" id="tasks-container"></div>
+      </div>
+    </div>
+  </section>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+   https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyC6AtwgwcN3gZwzjPrUrH8SMfWENMoalBc",
+      authDomain: "navisunpasit.firebaseapp.com",
+      projectId: "navisunpasit",
+      storageBucket: "navisunpasit.appspot.com",
+      messagingSenderId: "820527033864",
+      appId: "1:820527033864:web:c78edef4eefc02cfcbabbd",
+      measurementId: "G-Q5X5H3D807"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+   // firebase.analytics();
+  </script>
+
+  <!-- CUSTOM CODE -->
+  <script src="floor1.js"></script>
+
+</body>
+
+</html>

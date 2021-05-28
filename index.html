@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Admin Sunpasit</title>
+</head>
+
+<body>
+    <!-- <div class="login"> -->
+    <div class="login__content">
+        <div class="login__img">
+            <img src="assets/img/img-login.svg" alt="">
+        </div>
+
+        <div id="login_div" class="login__forms">
+            <!-- <form action="" class="login__registre" id="login-in"> -->
+
+            <h1 class="login__title">Sign In</h1>
+
+            <div class="login__box">
+                <i class='bx bx-user login__icon'></i>
+                <input type="email" placeholder="Username" class="login__input" id="email_field" />
+            </div>
+
+            <div class="login__box">
+                <i class='bx bx-lock-alt login__icon'></i>
+                <input type="password" placeholder="Password" class="login__input" id="password_field" />
+            </div>
+
+            <button onclick="login()" class="login__button">Login to Account</button>
+        </div>
+    <!-- </div> -->
+    <div id="user_div" class="loggedin-div">
+        <h3>Admin User</h3>
+        <p id="user_para">Welcome to Admin navigate sunpasit. You're currently logged in.</p>
+        <a href="navisunpasit.html"><button>เพิ่มลบแก้ไขข้อมูล</button></a>
+        <p></p>
+        <button onclick="logout()">Logout</button>
+        <p></p>
+    </div>
+    <!-- </div> -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyC6AtwgwcN3gZwzjPrUrH8SMfWENMoalBc",
+            authDomain: "navisunpasit.firebaseapp.com",
+            projectId: "navisunpasit",
+            storageBucket: "navisunpasit.appspot.com",
+            messagingSenderId: "820527033864",
+            appId: "1:820527033864:web:c78edef4eefc02cfcbabbd",
+            measurementId: "G-Q5X5H3D807"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <!--===== MAIN JS =====-->
+    <!-- <script src="assets/js/main.js"></script> -->
+    <script src="login.js"></script>
+</body>
+</html>
